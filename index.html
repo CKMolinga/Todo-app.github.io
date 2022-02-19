@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TO-DO App</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="text-center text-white my-4">
+            <h1 class="mb-4 text-5xl font-bold">Todo List</h1>
+            <form class="search">
+                <input class="shadow-md rounded px-8 pt-2 pb-4 m-auto" type="text" name="search" placeholder="search todos" />
+            </form>
+        </header>
+
+        <ul class="todos text-white">
+            <li class="todo-item mb-1 py-2 px-4">
+                <span>play mariokart</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+            <li class="todo-item mb-1 py-2 px-4">
+                <span>defeat ganon in zelda</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+            <li class="todo-item mb-1 py-2 px-4">
+                <span>make a veggie pie</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+        </ul>
+
+        <form class="add text-center my-4">
+            <label class="text-white mb-2">Add a new todo...</label>
+            <input class="m-auto rounded px-8 pt-2 pb-4" type="text" name="add" />
+        </form>
+
+    </div>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <script src="app.js" async defer></script>
+</body>
+
+</html>
